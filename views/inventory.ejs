@@ -1,0 +1,32 @@
+<!-- views/inventory.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Inventory</h1>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Inventory ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% inventory.forEach(item => { %>
+                    <tr>
+                        <td><%= item.Inventory_Id %></td>
+                        <td><%= item.Name %></td>
+                        <td><%= item.Description %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
