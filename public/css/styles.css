@@ -21,7 +21,7 @@ body {
 h1 {
     color: #00796b; /* Teal */
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: 700;
 }
 
@@ -61,4 +61,70 @@ h1 {
     .table th, .table td {
         padding: 10px;
     }
+}
+
+/* Styles for form component in styles.css */
+
+.formed {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f8e9; /* Light green background for form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formed .form-group label {
+    font-weight: 600;
+    color: #00796b; /* Teal for label text */
+}
+
+.formed .form-control {
+    border: 1px solid #b2dfdb; /* Light teal border */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #004d40; /* Darker teal for input text */
+    background-color: #e0f7fa; /* Light cyan background for input */
+}
+
+.formed .form-control:focus {
+    border-color: #00796b; /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+/* Specific styles for the "Add Inventory" button */
+.add-inventory-btn {
+    background-color: #00796b; /* Teal background */
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-inventory-btn:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+
+/* Adjust padding for mobile screens */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    form .form-group label,
+    form button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+.lead {
+    text-align: center;
+}
+.home {
+    display: flex;
+    justify-self: center;
 }

@@ -9,21 +9,7 @@
 <body>
     <div class="container">
         <h1 class="mt-4">Inventory</h1>
-        <form method="post" action="/inventory/add">
-            <div class="form-group">
-                <label for="Inventory_Id">Inventory ID:</label>
-                <input type="number" class="form-control" id="Inventory_Id" name="Inventory_Id" required>
-            </div>
-            <div class="form-group">
-                <label for="Name">Name:</label>
-                <input type="text" class="form-control" id="Name" name="Name" required>
-            </div>
-            <div class="form-group">
-                <label for="Description">Description:</label>
-                <input type="text" class="form-control" id="Description" name="Description" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Add Inventory</button>
-        </form>
+    
         <table class="table table-striped mt-3">
             <thead>
                 <tr>
@@ -48,6 +34,21 @@
                 <% }); %>
             </tbody>
         </table>
+        <form method="post" action="/inventory/add" class="formed">
+            <div class="form-group">
+                <label for="Inventory_Id">Inventory ID:</label>
+                <input type="number" class="form-control" id="Inventory_Id" name="Inventory_Id" required>
+            </div>
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="text" class="form-control" id="Name" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="Description">Description:</label>
+                <input type="text" class="form-control" id="Description" name="Description" required>
+            </div>
+            <button type="submit" class="btn btn-primary add-inventory-btn">Add Inventory</button>
+        </form>
     </div>
 </body>
 </html>
